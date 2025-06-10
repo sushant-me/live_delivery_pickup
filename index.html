@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ride Hailing App</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <h1>
+          <span class="brand-name">RideNow</span>
+          <span class="brand-tagline">Get there together</span>
+        </h1>
+      </header>
+
+      <main class="app-content">
+        <div class="map-container">
+          <div id="map"></div>
+          <div class="map-overlay">
+            <div class="status-card" id="status-card">
+              <div class="status-icon" id="status-icon">🚗</div>
+              <div class="status-text" id="status-text">Ready to ride</div>
+              <div class="status-details" id="status-details">
+                Click below to request a ride
+              </div>
+            </div>
+            <button class="ride-button" id="request-btn">
+              <span class="button-icon">🚖</span>
+              <span class="button-text">Request Ride</span>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="app-footer">
+        <div class="driver-info" id="driver-info" style="display: none">
+          <div class="driver-eta">
+            <span class="eta-label">ETA:</span>
+            <span class="eta-value" id="eta-value">3 min</span>
+          </div>
+          <div class="driver-distance">
+            <span class="distance-label">Distance:</span>
+            <span class="distance-value" id="distance-value">1.2 km</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
