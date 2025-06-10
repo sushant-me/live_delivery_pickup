@@ -1,0 +1,28 @@
+RideNow - Real-Time Ride Hailing Demo
+
+Key Features:
+- Interactive map with live car tracking
+- GPS location detection
+- Real-time ETA and distance calculations
+- Smooth car movement animations
+- Ride request/cancellation system
+- Responsive UI with status updates
+
+Tech Stack:
+Frontend: HTML5, CSS3, JavaScript
+Libraries: Leaflet.js (maps)
+Icons: Custom car marker
+
+Files:
+index.html - Main application
+css/style.js - Styling
+js/app.js - Core functionality
+images/car.png - Vehicle icon
+
+Usage:
+1. Open index.html
+2. Click "Request Ride"
+3. Watch car approach in real-time
+4. Cancel or complete ride
+
+Note: Simulation only - uses mock data
